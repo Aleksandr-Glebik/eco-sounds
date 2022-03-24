@@ -98,3 +98,22 @@ color: #bdae82;
 .rss:hover {
     fill: #bdae82;
 }
+.main-container {
+    width: 1240px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    background: transparent;
+    border: none;
+}
+.play {
+    height: 10rem;
+    fill: #fff;
+    transition: 0.6s;
+}
+.play:hover {
+    fill: #bdae82;
+}
