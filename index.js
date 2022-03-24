@@ -3,6 +3,7 @@ const audio = document.querySelector('.audio')
 const btnPlay = document.querySelector('.btn-play')
 const btnPlayIcon = document.querySelector('.play > use')
 const navList = document.querySelector('.nav-list')
+const mainContainer = document.querySelector('.main')
 const objVoiceBirds = {
     'solovey': './assets/audio/solovey.mp3',
     'drozd': './assets/audio/drozd.mp3',
@@ -10,6 +11,14 @@ const objVoiceBirds = {
     'javoronok': './assets/audio/javoronok.mp3',
     'slavka': './assets/audio/slavka.mp3',
     'forest': './assets/audio/forest.mp3',
+}
+const objImgBirds = {
+    'solovey': './assets/img/solovey.jpg',
+    'drozd': './assets/img/drozd.jpg',
+    'zarynka': './assets/img/zarynka.jpg',
+    'javoronok': './assets/img/javoronok.jpg',
+    'slavka': './assets/img/slavka.jpg',
+    'forest': './assets/img/forest.jpg',
 }
 
 let isPlay = false
@@ -35,6 +44,7 @@ function getNameBirds(event) {
         let value = event.target.dataset.birds
         // console.log('value', value);
         changeAudio(value)
+        changeImg(value)
     }
 }
 
@@ -55,5 +65,11 @@ function changeIconPlayer(isPlay) {
     } else if (!isPlay) {
         btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#play')
     }
+}
+
+
+function changeImg(value) {
+    let srcImg = objImgBirds[value]
+    mainContainer.style.backgroundImage = `url(${srcImg})`
 }
 
