@@ -32,10 +32,11 @@ html {
     height: inherit;
 }
 .header-container {
+    width: 1240px;
+    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: inherit;
 }
 .logo {
     width: 5rem;
@@ -67,4 +68,33 @@ html {
 .nav-link:hover,
 .nav-link:active {
 color: #bdae82;
+}
+.footer-container {
+    width: 1240px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-data {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text {
+    font-size: 3.2rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    line-height: 4.8rem;
+    color: #fff;
+}
+.rss {
+    width: 12rem;
+    height: 4rem;
+    fill: #fff;
+    transition: 0.6s;
+}
+.rss:hover {
+    fill: #bdae82;
 }
