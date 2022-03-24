@@ -1,6 +1,7 @@
 
 const audio = document.querySelector('.audio')
 const btnPlay = document.querySelector('.btn-play')
+const btnPlayIcon = document.querySelector('.play > use')
 const navList = document.querySelector('.nav-list')
 const objVoiceBirds = {
     'solovey': './assets/audio/solovey.mp3',
@@ -21,9 +22,11 @@ function playAudio() {
         audio.currentTime = 0
         audio.play()
         isPlay = true
+        changeIconPlayer(isPlay)
     } else if (isPlay) {
         audio.pause()
         isPlay = false
+        changeIconPlayer(isPlay)
     }
 }
 
@@ -42,5 +45,15 @@ function changeAudio(value) {
     audio.setAttribute('src', src)
     isPlay = false
     playAudio()
+    changeIconPlayer(isPlay)
+
+}
+
+function changeIconPlayer(isPlay) {
+    if (isPlay) {
+        btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#pause')
+    } else if (!isPlay) {
+        btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#play')
+    }
 }
 
