@@ -4,6 +4,7 @@ const btnPlay = document.querySelector('.btn-play')
 const btnPlayIcon = document.querySelector('.play > use')
 const navList = document.querySelector('.nav-list')
 const mainContainer = document.querySelector('.main')
+const btnLogo = document.querySelector('.logo')
 const objVoiceBirds = {
     'solovey': './assets/audio/solovey.mp3',
     'drozd': './assets/audio/drozd.mp3',
@@ -25,6 +26,7 @@ let isPlay = false
 
 btnPlay.addEventListener('click', playAudio)
 navList.addEventListener('click', getNameBirds)
+btnLogo.addEventListener('click', reternInStart)
 
 function playAudio() {
     if (!isPlay) {
@@ -71,5 +73,13 @@ function changeIconPlayer(isPlay) {
 function changeImg(value) {
     let srcImg = objImgBirds[value]
     mainContainer.style.backgroundImage = `url(${srcImg})`
+}
+
+function returnInStart() {
+    isPlay = false
+    audio.pause()
+    mainContainer.style.backgroundImage = `url(${'./assets/img/forest.jpg'})`
+    audio.setAttribute('src', './assets/audio/forest.mp3')
+    btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#play')
 }
 
