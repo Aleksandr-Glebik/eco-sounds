@@ -26,7 +26,7 @@ let isPlay = false
 
 btnPlay.addEventListener('click', playAudio)
 navList.addEventListener('click', getNameBirds)
-btnLogo.addEventListener('click', reternInStart)
+btnLogo.addEventListener('click', returnInStart)
 
 function playAudio() {
     if (!isPlay) {
