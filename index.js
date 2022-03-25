@@ -112,3 +112,14 @@ function preloadImages() {
 
 preloadImages()
 
+function preloadAudios() {
+    let arrObjAudios = Object.values(objVoiceBirds)
+    arrObjAudios.forEach((item) => {
+        // console.log('item', item);
+        const audio = new Audio()
+        audio.src = item
+    })
+}
+
+preloadAudios()
+
