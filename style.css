@@ -119,3 +119,7 @@ color: #bdae82;
 .play:hover {
     fill: #bdae82;
 }
+.active {
+color: #bdae82;
+fill: #bdae82;
+}
