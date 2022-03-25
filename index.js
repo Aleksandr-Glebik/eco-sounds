@@ -65,7 +65,7 @@ function changeAudio(value) {
     changeIconPlayer(isPlay)
 }
 
-console.log('svgBtnPlayIcon', svgBtnPlayIcon);
+// console.log('svgBtnPlayIcon', svgBtnPlayIcon);
 function changeIconPlayer(isPlay) {
     if (isPlay) {
         svgBtnPlayIcon.classList.remove('slowlyShow')

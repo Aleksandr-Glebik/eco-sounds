@@ -30,6 +30,7 @@ html {
 }
 .wrapper {
   max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
   height: inherit;
 }
@@ -47,12 +48,14 @@ html {
   transition: 0.6s;
   padding-top: 0.5rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .logo:hover {
   fill: #bdae82;
 }
 .nav {
   width: 80rem;
+  margin-right: 2rem;
 }
 .nav-list {
   display: flex;
@@ -84,6 +87,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 2rem;
 }
 .footer-text {
   font-size: 3.2rem;
@@ -97,6 +101,7 @@ html {
   height: 4rem;
   fill: #fff;
   transition: 0.6s;
+  margin-right: 2rem;
 }
 .rss:hover {
   fill: #bdae82;
@@ -132,3 +137,62 @@ opacity: 0;
 .slowlyShow {
 opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+.header {
+height: 5rem;
+}
+.main {
+height: calc(100vh - 10rem);
+}
+.footer {
+height: 5rem;
+}
+.wrapper {
+max-width: 1024px;
+width: 100%;
+}
+.header-container {
+width: 1024px;
+}
+.logo {
+width: 4rem;
+height: 4rem;
+}
+.nav {
+width: 60rem;
+}
+.nav-link {
+font-size: 2.8rem;
+line-height: 4.2rem;
+}
+.footer-container {
+width: 1024px;
+}
+.footer-data {
+width: 26rem;
+}
+.footer-text {
+font-size: 2.8rem;
+line-height: 4.2rem;
+}
+.rss {
+width: 10rem;
+height: 4rem;
+}
+.main-container {
+width: 1024px;
+}
+.play {
+height: 8rem;
+}
+}
+/* @media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 425px) {
+
+}
+@media screen and (max-width: 320px) {
+
+} */
