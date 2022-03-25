@@ -102,3 +102,13 @@ function addActiveClass(event) {
     }
 }
 
+function preloadImages() {
+    let arrObjImgs = Object.values(objImgBirds)
+    arrObjImgs.forEach((item) => {
+        const img = new Image()
+        img.src = item
+    })
+}
+
+preloadImages()
+

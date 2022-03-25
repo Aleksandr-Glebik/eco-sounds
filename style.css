@@ -1,125 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;700&display=swap");
 /*
 font-family: 'Caveat', cursive;
 font-family: 'Nunito', sans-serif;
 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 .header {
-    width: 100%;
-    height: 6rem;
-    background-color: #000;
+  width: 100%;
+  height: 6rem;
+  background-color: #000;
 }
 .main {
-    width: 100%;
-    height: calc(100vh - 12rem);
-    background-image: url(./assets/img/drozd.jpg);
+  width: 100%;
+  height: calc(100vh - 12rem);
+  background-image: url(./assets/img/drozd.jpg);
+  background-size: cover;
 }
 .footer {
-    width: 100%;
-    height: 6rem;
-    background-color: #000;
+  width: 100%;
+  height: 6rem;
+  background-color: #000;
 }
 .wrapper {
-    max-width: 1240px;
-    margin: 0 auto;
-    height: inherit;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: inherit;
 }
 .header-container {
-    width: 1240px;
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 1240px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-    width: 5rem;
-    height: 5rem;
-    fill: #fff;
-    transition: 0.6s;
-    padding-top: 0.5rem;
-    cursor: pointer;
-  }
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+  transition: 0.6s;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
 .logo:hover {
-    fill: #bdae82;
+  fill: #bdae82;
 }
 .nav {
-    width: 80rem;
+  width: 80rem;
 }
 .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-link {
-    text-decoration: none;
-    font-size: 3.2rem;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
-    line-height: 4.8rem;
-    color: #fff;
-    transition: color 0.6s;
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  line-height: 4.8rem;
+  color: #fff;
+  transition: color 0.6s;
 }
 .nav-link:hover,
 .nav-link:active {
-color: #bdae82;
+  color: #bdae82;
 }
 .footer-container {
-    width: 1240px;
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 1240px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-data {
-    width: 30rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-text {
-    font-size: 3.2rem;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
-    line-height: 4.8rem;
-    color: #fff;
+  font-size: 3.2rem;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  line-height: 4.8rem;
+  color: #fff;
 }
 .rss {
-    width: 12rem;
-    height: 4rem;
-    fill: #fff;
-    transition: 0.6s;
+  width: 12rem;
+  height: 4rem;
+  fill: #fff;
+  transition: 0.6s;
 }
 .rss:hover {
-    fill: #bdae82;
+  fill: #bdae82;
 }
 .main-container {
-    width: 1240px;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 1240px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 .play {
-    height: 10rem;
-    fill: #fff;
-    cursor: pointer;
-    transition: 0.6s;
+  height: 10rem;
+  fill: #fff;
+  cursor: pointer;
+  transition: 0.6s;
 }
 .play:hover {
-    fill: #bdae82;
+  fill: #bdae82;
 }
 .active {
-color: #bdae82;
-fill: #bdae82;
+  color: #bdae82;
+  fill: #bdae82;
 }
