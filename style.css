@@ -21,6 +21,7 @@ html {
   height: calc(100vh - 12rem);
   background-image: url(./assets/img/drozd.jpg);
   background-size: cover;
+  transition: 0.8s ease;
 }
 .footer {
   width: 100%;
@@ -112,10 +113,11 @@ html {
   border: none;
 }
 .play {
+  opacity: 0;
   height: 10rem;
   fill: #fff;
   cursor: pointer;
-  transition: 0.6s;
+  transition: all 0.6s ease;
 }
 .play:hover {
   fill: #bdae82;
@@ -123,4 +125,10 @@ html {
 .active {
   color: #bdae82;
   fill: #bdae82;
+}
+.slowlyHide {
+opacity: 0;
+}
+.slowlyShow {
+opacity: 1;
 }

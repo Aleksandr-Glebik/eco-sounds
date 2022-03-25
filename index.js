@@ -7,6 +7,7 @@ const mainContainer = document.querySelector('.main')
 const btnLogo = document.querySelector('.logo')
 const btnLogoUse = document.querySelector('.logo > use')
 const btnBirds = document.querySelectorAll('.btn-birds')
+const svgBtnPlayIcon = document.querySelector('.play')
 const objVoiceBirds = {
     'solovey': './assets/audio/solovey.mp3',
     'drozd': './assets/audio/drozd.mp3',
@@ -64,14 +65,22 @@ function changeAudio(value) {
     changeIconPlayer(isPlay)
 }
 
+console.log('svgBtnPlayIcon', svgBtnPlayIcon);
 function changeIconPlayer(isPlay) {
     if (isPlay) {
-        btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#pause')
+        svgBtnPlayIcon.classList.remove('slowlyShow')
+        setTimeout(() => {
+            svgBtnPlayIcon.classList.add('slowlyShow')
+            btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#pause')
+        }, 300)
     } else if (!isPlay) {
-        btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#play')
+        svgBtnPlayIcon.classList.remove('slowlyShow')
+        setTimeout(() => {
+            svgBtnPlayIcon.classList.add('slowlyShow')
+            btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#play')
+        }, 300)
     }
 }
-
 
 function changeImg(value) {
     let srcImg = objImgBirds[value]
