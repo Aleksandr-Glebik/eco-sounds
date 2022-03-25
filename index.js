@@ -63,9 +63,10 @@ function changeAudio(value) {
 
 function changeIconPlayer(isPlay) {
     if (isPlay) {
-        btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#pause')
+        // btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#pause')
+        btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#pause')
     } else if (!isPlay) {
-        btnPlayIcon.setAttribute('xlink:href', '../eco-sounds/assets/svg/sprite.svg#play')
+        btnPlayIcon.setAttribute('xlink:href', './assets/svg/sprite.svg#play')
     }
 }
 
